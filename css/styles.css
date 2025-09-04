@@ -268,6 +268,46 @@ body {
     position: absolute;
     left: 0;
 }
+.job-market-announcement {
+    margin: 25px 0;
+    padding: 16px 20px;
+    background-color: #f2f7ff;
+    border-left: 5px solid #4285f4;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.announcement-content {
+    display: flex;
+    align-items: center;
+}
+
+.announcement-icon {
+    font-size: 24px;
+    color: #4285f4;
+    margin-right: 15px;
+}
+
+.announcement-text {
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+.announcement-text strong {
+    font-weight: 700;
+    color: #0d47a1;
+    font-size: 1.1em;
+}
+
+.announcement-text a {
+    color: #4285f4;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.announcement-text a:hover {
+    color: #0d47a1;
+}
 
 /* ===================================
    News Section
