@@ -1,0 +1,97 @@
+{
+  "name": "academic-website",
+  "version": "1.0.0",
+  "description": "Professional academic website for Kazi Tasnim Zinat - PhD Candidate in Computer Science",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -c-1 -p 8080",
+    "dev": "http-server -c-1 -p 8080 --cors",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o css/styles.min.css css/styles.css",
+    "minify-js": "uglifyjs js/script.js -o js/script.min.js",
+    "validate": "html-validate index.html",
+    "lint-css": "stylelint css/*.css",
+    "lint-js": "eslint js/*.js",
+    "optimize-images": "imagemin assets/images/* --out-dir=assets/images/optimized",
+    "serve-https": "http-server -S -C cert.pem -K key.pem",
+    "test": "npm run validate && npm run lint-css && npm run lint-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kzintas/kzintas.github.io.git"
+  },
+  "keywords": [
+    "academic",
+    "website",
+    "portfolio",
+    "computer-science",
+    "research",
+    "phd",
+    "visualization",
+    "data-science",
+    "machine-learning"
+  ],
+  "author": {
+    "name": "Kazi Tasnim Zinat",
+    "email": "kzintas@umd.edu",
+    "url": "https://kzintas.github.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kzintas/kzintas.github.io/issues"
+  },
+  "homepage": "https://kzintas.github.io",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4",
+    "html-validate": "^8.7.4",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "eslint": "^8.54.0",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-mozjpeg": "^10.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "indentation": 4,
+      "string-quotes": "single",
+      "no-duplicate-selectors": true,
+      "color-hex-case": "lower",
+      "color-hex-length": "long",
+      "selector-no-qualifying-type": null,
+      "property-no-vendor-prefix": null
+    }
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "rules": {
+      "indent": ["error", 4],
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
+      "no-unused-vars": "warn",
+      "no-console": "off"
+    }
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
