@@ -70,7 +70,7 @@
                 <li><a href="#publications" class="nav-link">Publications</a></li>
                 <li><a href="#news" class="nav-link">News</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#awards-and-recognitions" class="nav-link">Awards & Recognitions</a></li>
+                <li><a href="#awards" class="nav-link">Awards & Recognitions</a></li>
             </ul>
         </div>
     </nav>
@@ -298,60 +298,186 @@
             </div>
             </section>
 
-            <!-- Research Section -->
-            <section id="research" class="section">
-                <h2 class="section-title">Research</h2>
-                
-                <div class="research-projects">
-                    <div class="research-project">
-                        <h3 class="project-title">ProcVQA: Benchmarking Vision-Language Models on Process Visualizations</h3>
-                        <p class="project-description">
-                            Created the first comprehensive benchmark for evaluating Vision-Language Models (VLMs) on process visualizations, featuring 118 charts across three visualization types and eight domains. Developed dual-task evaluation protocol with 144 expert-authored questions and 2,583 ground truth annotations. Evaluated 19 state-of-the-art VLMs, revealing critical performance degradation patterns and failure modes.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Vision-Language Models</span>
-                            <span class="tag">Benchmark</span>
-                            <span class="tag">Evaluation</span>
-                        </div>
+        <!-- Research Section -->
+        <section id="research" class="section">
+            <h2 class="section-title">Research</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-image">
+                        <img src="assets/images/procvqa.png" alt="VLM Benchmarking Research" onerror="this.src='assets/images/placeholder.png'">
                     </div>
-
-                    <div class="research-project">
-                        <h3 class="project-title">Causal Relation Shifts in Event Sequences</h3>
-                        <p class="project-description">
-                            Developed a novel causal framework extending Rubin's causal model to temporal point processes for detecting causal relationship changes under distribution shifts. Engineered a hybrid Transformer-CNN architecture achieving 88% reduction in RMSE and 90% in MAE on industrial maintenance data. Research conducted during internships at Amazon Web Services.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Causal Inference</span>
-                            <span class="tag">Deep Learning</span>
-                            <span class="tag">Time Series</span>
+                    <div class="research-content">
+                        <h3 class="research-title">
+                            <a href="#" target="_blank">Vision-Language Model Evaluation for Process Visualizations</a>
+                        </h3>
+                        <div class="research-authors">
+                            <strong>Amazon Web Services Internship</strong> • <strong>EMNLP Findings 2025</strong>
                         </div>
-                    </div>
-
-                    <div class="research-project">
-                        <h3 class="project-title">Multi-Level Task Framework for Event Sequence Analysis</h3>
-                        <p class="project-description">
-                            Developed a comprehensive domain-agnostic task framework through systematic analysis of 58 visualization systems across 16 academic venues. Created a four-level hierarchical taxonomy capturing objectives, intents, strategies, and techniques. Established theoretical foundation for next-generation intelligent assistance tools in event sequence analytics.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Taxonomy</span>
-                            <span class="tag">Framework</span>
-                            <span class="tag">Event Sequences</span>
+                        <div class="research-venue">
+                            <i class="fas fa-eye"></i>
+                            <strong>VLM Benchmarking</strong>
                         </div>
-                    </div>
-
-                    <div class="research-project">
-                        <h3 class="project-title">Visual Summarization Techniques Evaluation</h3>
-                        <p class="project-description">
-                            Conducted large-scale empirical evaluation with 180 participants across 108 unique visual summaries and 6 datasets. Reimplemented three visualization techniques with standardized visual encoding. Established the first benchmarking protocol for visual summarization techniques, identifying content and interpretability as key quality factors.
+                        <p class="research-description">
+                            Created the first comprehensive benchmark (ProcVQA) for evaluating Vision-Language Models on process visualizations. Featured 118 charts across 8 domains, revealing critical performance degradation patterns in state-of-the-art models when processing complex visual information.
                         </p>
-                        <div class="project-tags">
-                            <span class="tag">Human Study</span>
-                            <span class="tag">Visualization</span>
-                            <span class="tag">Evaluation</span>
+                        <div class="research-links">
+                            <a href="#publications" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> Paper
+                            </a>
+                            <a href="#" class="pub-link" target="_blank">
+                                <i class="fas fa-database"></i> Dataset
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
+
+                <div class="research-card">
+                    <div class="research-image">
+                        <img src="assets/images/causal_research.png" alt="Causal Inference Research" onerror="this.src='assets/images/placeholder.png'">
+                    </div>
+                    <div class="research-content">
+                        <h3 class="research-title">
+                            <a href="#" target="_blank">Causal Inference in Temporal Event Sequences</a>
+                        </h3>
+                        <div class="research-authors">
+                            <strong>Amazon Web Services Internship</strong> • <strong>ICANN 2025</strong>
+                        </div>
+                        <div class="research-venue">
+                            <i class="fas fa-project-diagram"></i>
+                            <strong>Causal AI</strong>
+                        </div>
+                        <p class="research-description">
+                            Developed novel causal frameworks extending Rubin's causal model to temporal point processes. Created hybrid Transformer-CNN architectures achieving 88% reduction in RMSE and 90% in MAE on industrial maintenance data for detecting causal relationship shifts under distribution changes.
+                        </p>
+                        <div class="research-links">
+                            <a href="#publications" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> Paper
+                            </a>
+                            <a href="#" class="pub-link" target="_blank">
+                                <i class="fas fa-code"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-image">
+                        <img src="assets/images/framework_research.png" alt="Analytics Framework Research" onerror="this.src='assets/images/placeholder.png'">
+                    </div>
+                    <div class="research-content">
+                        <h3 class="research-title">
+                            <a href="#" target="_blank">Domain-Agnostic Event Sequence Analytics</a>
+                        </h3>
+                        <div class="research-authors">
+                            <strong>PhD Dissertation Research</strong> • <strong>IEEE VIS 2024</strong>
+                        </div>
+                        <div class="research-venue">
+                            <i class="fas fa-sitemap"></i>
+                            <strong>Framework Development</strong>
+                        </div>
+                        <p class="research-description">
+                            Built comprehensive domain-agnostic frameworks through systematic analysis of 58 visualization systems across 16 academic venues. Created four-level hierarchical taxonomy establishing theoretical foundation for next-generation intelligent assistance tools and cross-domain knowledge transfer.
+                        </p>
+                        <div class="research-links">
+                            <a href="#publications" class="research-link">
+                                <i class="fas fa-file-pdf"></i> Paper
+                            </a>
+                            <a href="#" class="pub-link" target="_blank">
+                                <i class="fas fa-tools"></i> Framework
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-image">
+                        <img src="assets/images/evaluation_research.png" alt="Human-Centered Evaluation Research" onerror="this.src='assets/images/placeholder.png'">
+                    </div>
+                    <div class="research-content">
+                        <h3 class="research-title">
+                            <a href="#" target="_blank">Large-Scale Human-Centered Evaluation Studies</a>
+                        </h3>
+                        <div class="research-authors">
+                            <strong>PhD Research</strong> • <strong>EuroVis 2023</strong> • <strong>CHI 2025</strong>
+                        </div>
+                        <div class="research-venue">
+                            <i class="fas fa-users"></i>
+                            <strong>Human Studies</strong>
+                        </div>
+                        <p class="research-description">
+                            Conducted large-scale empirical studies with 180+ participants examining visual summarization techniques and collaborative writing behaviors. Developed insight-based evaluation protocols and established benchmarking methodologies for visual analytics systems across cultural groups.
+                        </p>
+                        <div class="research-links">
+                            <a href="#publications" class="research-link">
+                                <i class="fas fa-file-pdf"></i> Papers
+                            </a>
+                            <a href="#" class="pub-link" target="_blank">
+                                <i class="fas fa-chart-line"></i> Data
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-image">
+                        <img src="assets/images/bioinformatics_research.png" alt="Bioinformatics Research" onerror="this.src='assets/images/placeholder.png'">
+                    </div>
+                    <div class="research-content">
+                        <h3 class="research-title">
+                            <a href="#" target="_blank">Interactive Bioinformatics Visualization Systems</a>
+                        </h3>
+                        <div class="research-authors">
+                            <strong>HCBravo Lab Research</strong> • <strong>BioConductor Package</strong>
+                        </div>
+                        <div class="research-venue">
+                            <i class="fas fa-dna"></i>
+                            <strong>Computational Biology</strong>
+                        </div>
+                        <p class="research-description">
+                            Developed interactive visualization systems for single-cell RNA sequencing data with hierarchical annotations. Created scTreeViz R package enabling interactive exploration of complex biological datasets through icicle tree-based visualizations and data transformation components.
+                        </p>
+                        <div class="research-links">
+                            <a href="#publications" class="research-link">
+                                <i class="fas fa-cube"></i> Package
+                            </a>
+                            <a href="#" class="research-link" target="_blank">
+                                <i class="fas fa-code"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-image">
+                        <img src="assets/images/multi_agent_research.png" alt="Multi-Agent Systems Research" onerror="this.src='assets/images/placeholder.png'">
+                    </div>
+                    <div class="research-content">
+                        <h3 class="research-title">
+                            <a href="#" target="_blank">Multi-Agent Event Sequence Analysis Systems</a>
+                        </h3>
+                        <div class="research-authors">
+                            <strong>Ongoing PhD Research</strong> • <strong>HDI Group</strong>
+                        </div>
+                        <div class="research-venue">
+                            <i class="fas fa-robot"></i>
+                            <strong>AI Agents</strong>
+                        </div>
+                        <p class="research-description">
+                            Designing LLM orchestration architectures using Autogen framework for automated event sequence analysis. Developing tool-augmented LLM pipelines and human-in-the-loop systems that translate high-level analytical objectives into executable visualization workflows.
+                        </p>
+                        <div class="research-links">
+                            <a href="#" class="research-link" target="_blank">
+                                <i class="fas fa-play"></i> Demo
+                            </a>
+                            <a href="#" class="pub-link" target="_blank">
+                                <i class="fas fa-cogs"></i> System
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
             <!-- Experience Section -->
             <section id="experience" class="section">
@@ -421,12 +547,12 @@
             </section>
 
             <!-- Awards Section -->
-            <section id="awards-and-recognitions" class="section">
+            <section id="awards" class="section">
                 <h2 class="section-title">Awards & Recognition</h2>
                 
                 <div class="awards-list">
                     <div class="award-item">
-                        <span class="award-year">2024</span>
+                        <span class="award-year">2025, 2024</span>
                         <div class="award-details">
                             <h3 class="award-title">Travel Grant</h3>
                             <p class="award-organization">Department of Computer Science, University of Maryland</p>
