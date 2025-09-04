@@ -380,7 +380,9 @@ body {
 
 .pub-title a {
     color: #1a1a1a;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #ffa963;
+    text-underline-offset: 3px;
     font-weight: 500;
     font-size: 1.05rem;
     line-height: 1.4;
