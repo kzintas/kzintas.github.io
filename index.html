@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kazi Tasnim Zinat</title>
-    <meta name="description" content="PhD Candidate in Computer Science at University of Maryland, College Park. Research in event sequence analysis, data visualization, and causal inference.">
-    <meta name="keywords" content="computer science, PhD, visualization, machine learning, causal inference, event sequences">
+    <meta name="description" content="Final‑year CS Ph.D. candidate at UMD building benchmarks, systems, and models that make event sequences understandable and reliable.">
+    <meta name="keywords" content="Kazi Tasnim Zinat, Zinat, University of Maryland, event sequence analysis, visualization, EMNLP, VLM benchmark, causal inference, temporal point process, TVCG, EuroVis">
     
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Kazi Tasnim Zinat — AI + Causality + Visualization for Event Sequences" />
+    <meta property="og:description" content="Ph.D. candidate at UMD. I build VLM benchmarks, causal sequence models, and human‑in‑the‑loop systems for event sequence analytics." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+
     <!-- External Dependencies -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -29,7 +35,7 @@
                     </div>
                     <div class="profile-info">
                         <h1 class="name">Kazi Tasnim Zinat</h1>
-                        <h2 class="title">PhD Candidate in Computer Science</h2>
+                        <h2 class="title">AI + Causality + Visualization for Event Sequences</h2>
                         <p class="affiliation">University of Maryland, College Park</p>
                         <p class="advisor">Advisor: <a href="https://www.zcliu.org/" target="_blank">Leo Zhicheng Liu</a></p>
                         
@@ -48,7 +54,7 @@
                             </div>
                             <div class="contact-item">
                                 <i class="fas fa-graduation-cap"></i>
-                                <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+                                <a href="https://scholar.google.com/citations?user=hsG9DIgAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
                             </div>
                             <div class="contact-item">
                                 <i class="fas fa-file-pdf"></i>
@@ -82,14 +88,22 @@
             <section id="about" class="section active">
                 <h2 class="section-title">About</h2>
                 <div class="about-content">
-                    <p>I am a final-year PhD candidate in the Department of Computer Science at the University of Maryland, College Park, advised by <a href="https://www.cs.umd.edu/people/leozcliu" target="_blank">Dr. Zhicheng Liu</a> in the <a href="https://hdi.cs.umd.edu/" target="_blank">Human-Data Interaction Group</a>.</p>
+                    <p>
+                        I’m a final‑year Ph.D. candidate in Computer Science at the University of Maryland, College Park
+                        in the <a href="https://hdi.cs.umd.edu/" target="_blank" rel="noopener noreferrer">Human‑Data Interaction Group</a>, advised by
+                        <a href="https://www.cs.umd.edu/people/leozcliu" target="_blank" rel="noopener noreferrer">Dr. Zhicheng Liu</a>.
+                    </p>
+                    <p>My work blends <strong>event sequence analysis</strong>, <strong>machine learning</strong>, and <strong>visual analytics</strong>: I build (1) <em>benchmarks</em>  to evaluate multimodal models on structural properties of process visualizations, (2) source attributed <em>RAG-based</em>  systems for trustworthy retrieval, and (3) <em>human‑in‑the‑loop</em> agentic systems that turn high‑level
+analytical intents into reliable workflows.</p>
+<p>I have also developed domain-agnostic frameworks for event-sequence analysis and have conducted large-scale  studies to understand how humans interpret information-rich event sequence visualizations.</p>
+<p>Previously, I was an <strong>Applied Science Intern at AWS (Bedrock & MLSL)</strong>, where I developed intervention-aware causal models for sequential data with large accuracy gains on industrial maintenance logs.</p>
 
-                    <p>I have published at conferences and workshops at top-tier machine learning and HCI venues including <strong>EMNLP</strong>, <strong>IEEE VIS</strong>, <strong>EuroVis</strong>, <strong>CHI</strong>, <strong>NAACL</strong> and <strong>CVPR</strong>, and have internship experience at <strong>Amazon Web Services</strong> developing causal discovery framework for temporal data.</p>
+                    <p>My work has been published at conferences and workshops of machine learning and HCI venues including <strong>EMNLP</strong>, <strong>IEEE VIS</strong>, <strong>EuroVis</strong>, <strong>CHI</strong>, <strong>NAACL</strong> and <strong>CVPR</strong>.</p>
 
-                    <p>My research interests span <strong>event sequence analysis</strong>, <strong>machine learning</strong>, <strong>data visualization</strong>, <strong>causal inference</strong>, and <strong>vision-language models</strong>. </p>
+                    <!-- <p>My research interests span <strong>event sequence analysis</strong>, <strong>machine learning</strong>, <strong>data visualization</strong>, <strong>causal inference</strong>, and <strong>vision-language models</strong>. </p> -->
                     <!-- I have developed novel benchmarks for evaluating VLMs on process visualizations and created frameworks for detecting causal relationships in temporal data under distribution shifts.</p> -->
 
-                    <p>My dissertation, titled <em>"Beyond Domain Boundaries: Enhancing Generalizability of Event Sequence Visual Analytics Research,"</em> focuses on developing domain-agnostic modeling, analysis and visualization techniques for sequential data.</p>
+                    <p>My dissertation, titled <em>Beyond Domain Boundaries: Enhancing Generalizability of Event Sequence Visual Analytics Research,</em> focuses on developing domain-agnostic modeling, analysis and visualization techniques for sequential data.</p>
                     <p>I hold a B.Sc. in Computer Science and Engineering from <a href="https://www.buet.ac.bd/" target="_blank">Bangladesh University of Engineering & Technology</a>.</p>
                     
                     <p>Outside of research, I enjoy reading (check out my <a href="https://www.goodreads.com/kzintas" target="_blank">Goodreads</a>), traveling, hiking and exploring new cuisines.</p>
@@ -319,8 +333,10 @@
                             <strong>VLM Benchmarking, Accessibility</strong>
                         </div>
                         <p class="research-description">
-                            Created the first comprehensive benchmark (ProcVQA) for evaluating Vision-Language Models on process visualizations. Featured 118 charts across 8 domains, revealing critical performance degradation patterns in state-of-the-art models when processing complex visual information.
-                        </p>
+ProcVQA is the first benchmark for process visualizations: <strong>118</strong> charts with standardized rendering,
+<strong>2,500+</strong> ground‑truth tuples and <strong>140+</strong> expert VQA items. We evaluated <strong>20+ models</strong> and exposed sharp drops from
+single‑ to multi‑hop reasoning plus higher hallucination on edge‑dense graphs.
+</p>
                         <div class="research-links">
                             <a href="#" class="pub-link">
                                 <i class="fas fa-file-pdf"></i> Coming Soon
@@ -347,10 +363,11 @@
                         </div>
                         <div class="research-venue">
                             <i class="fas fa-robot"></i>
-                            <strong>RAG, LLM Orchestration, AI Agents</strong>
+                            <strong>LLM Orchestration, AI Agents</strong>
                         </div>
                         <p class="research-description">
-                            Designing LLM orchestration architectures using Autogen framework for automated event sequence analysis. Developing tool-augmented LLM pipelines and human-in-the-loop systems that translate high-level analytical objectives into executable visualization workflows.
+                            Operationalizes a task framework with specialized agents (Planner → Intent → Technique → Executor) in an approval‑gated loop using Autogen.
+Generates and runs analysis code with full traceability, combining hybrid retrieval (BM25 + vectors) and figure indexing.
                         </p>
                         <!-- <div class="research-links">
                             <a href="#" class="research-link" target="_blank">
@@ -361,6 +378,28 @@
                             </a>
                         </div> -->
                     </div>
+                </div>
+                                <!-- RAG / Knowledge Base -->
+                <div class="research-card">
+                <div class="research-image">
+                <img src="assets/images/agent.png" alt="Event‑sequence knowledge base RAG pipeline" onerror="this.src='assets/images/placeholder.png'" />
+                </div>
+                <div class="research-content">
+                <h3 class="research-title">Event‑Sequence Knowledge Base (RAG + Document AI)</h3>
+                <div class="research-authors"><strong>Ongoing Ph.D. Research</strong></div>
+                <div class="research-venue"><i class="fas fa-database" aria-hidden="true"></i> <strong>RAG, Document AI, Figure Indexing</strong></div>
+                <p class="research-description">
+                ETL + retrieval pipeline that turns <strong>100+</strong> papers into structured, searchable knowledge. PDF parsing with figure/table
+                extraction; multimodal indexing (text, captions, figure embeddings); hybrid retrieval (BM25 + vectors) with reranking; and
+                source‑grounded answers delivered via a FastAPI backend and React frontend. Includes citation trails and confidence indicators to
+                reduce hallucinations and support traceability.
+                </p>
+                <div class="research-links">
+                <!-- Optional: add links when available -->
+                <!-- <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-play-circle" aria-hidden="true"></i> Demo</a> -->
+                <!-- <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-code" aria-hidden="true"></i> Code</a> -->
+                <!-- <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-book" aria-hidden="true"></i> Docs</a> -->
+                </div>
                 </div>
                 <div class="research-card">
                     <div class="research-image">
@@ -378,7 +417,9 @@
                             <strong>Causal Inference, Temporal Point Processes, Transformer</strong>
                         </div>
                         <p class="research-description">
-                            Developed novel causal frameworks extending Rubin's causal model to temporal point processes with out-of-domain interventions. Created hybrid Transformer-CNN architectures achieving 88% reduction in RMSE and 90% in MAE on industrial maintenance data, with theoretical proofs for counterfactual treatment effect estimation.
+                            Introduced intervention‑aware estimators within a temporal‑point‑process framework and a hybrid Transformer‑CNN architecture.
+Achieved <strong>88%</strong> RMSE and <strong>90%</strong> MAE reductions on industrial maintenance data and ~<strong>50%</strong> lower NLL in simulations;
+demonstrated literature‑consistent shifts on clinical data.
                         </p>
                         <div class="research-links">
                             <a href="https://arxiv.org/abs/2507.10809" class="pub-link">
@@ -391,6 +432,7 @@
                     </div>
                 </div>
 
+                </div>
                 <div class="research-card">
                     <div class="research-image">
                         <img src="assets/images/framework.png" alt="Analytics Framework Research" onerror="this.src='assets/images/placeholder.png'">
@@ -407,7 +449,8 @@
                             <strong>Framework Development, Taxonomy</strong>
                         </div>
                         <p class="research-description">
-                            Built comprehensive domain-agnostic framework through systematic analysis of 58 visualization systems across 16 academic venues. Created four-level hierarchical taxonomy (6 objectives, 5 intents, 15+ strategies) with action-input-output-criteria quartets, establishing theoretical foundation for intelligent assistance tools.
+                            Systematic review of <strong>58</strong> systems across <strong>16</strong> venues yields a four‑level taxonomy (objectives → intents → strategies → techniques),
+with action–input–output–criteria quartets. Establishes a foundation for automation and knowledge transfer in sequence analytics.
                         </p>
                         <div class="research-links">
                             <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10684003" target="_blank" class="pub-link">
@@ -426,7 +469,7 @@
                     </div>
                     <div class="research-content">
                         <h3 class="research-title">
-                            Large-Scale Human-Centered Evaluation on Visual Summary
+                            Large-Scale Human-Centered Evaluation of Visual Summaries
                         </h3>
                         <div class="research-authors">
                             <strong>EuroVis 2023</strong>
@@ -436,7 +479,9 @@
                             <strong>Visual Summarization, Crowdsourcing, Evaluation</strong>
                         </div>
                         <p class="research-description">
-                            Conducted large-scale empirical study with 180 participants examining event sequence visual summarization techniques using 108 unique visual summaries across 6 datasets. Reimplemented CoreFlow, SentenTree, and Sequence Synopsis with standardized encodings, establishing first benchmarking protocol and revealing accuracy-efficiency tradeoffs (Sequence Synopsis: highest quality 3.86/7, 36% longer comprehension time).
+                            180 participants × 6 datasets with 108 visual summaries. Reimplemented 3 pattern mining analysis techniques (CoreFlow, SentenTree, and Sequence Synopsis) with
+standardized encodings, revealing accuracy–efficiency trade‑offs (Sequence Synopsis highest quality; ~36% longer comprehension time).
+
                         </p>
                         <div class="research-links">
                             <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.14821" class="pub-link">
@@ -468,7 +513,7 @@
                             <strong>Visual Analytics, Cross-cultural Studies</strong>
                         </div>
                         <p class="research-description">
-                            Developed COALA, a visual analytics tool analyzing collaborative writing behaviors across 162 writing sessions from 27 teams. Adapted Sequence Synopsis technique for behavioral pattern analysis, comparing native and non-native English speakers' writing strategies. Contributed to design implications for AI writing assistants through LLM-generated cluster summaries while maintaining interpretability.
+                            Adapted Sequence Synopsis technique for behavioral pattern analysis, comparing native and non-native English speakers' writing strategies. Contributed to design implications for AI writing assistants through LLM-generated cluster summaries while maintaining interpretability.
                         </p>
                         <div class="research-links">
                             <a href="https://dl.acm.org/doi/10.1145/3706598.3713693" class="pub-link" target="_blank">
@@ -640,6 +685,13 @@
                             <p class="award-organization">Department of Computer Science, University of Maryland</p>
                         </div>
                     </div>
+                    <div class="award-item">
+                        <span class="award-year">2023-2025</span>
+                        <div class="award-details">
+                            <h3 class="award-title">"Highly Useful" Reviewer Recognition</h3>
+                            <p class="award-organization">IEEE VIS, EuroVis, PacificVis</p>
+                        </div>
+                    </div>
 
                     <div class="award-item">
                         <span class="award-year">2023</span>
@@ -686,14 +738,6 @@
                         <div class="award-details">
                             <h3 class="award-title">Dean's Fellowship</h3>
                             <p class="award-organization">Department of Computer Science, University of Maryland</p>
-                        </div>
-                    </div>
-
-                    <div class="award-item">
-                        <span class="award-year">2023-2025</span>
-                        <div class="award-details">
-                            <h3 class="award-title">"Highly Useful" Reviewer Recognition</h3>
-                            <p class="award-organization">IEEE VIS, EuroVis, PacificVis</p>
                         </div>
                     </div>
                 </div>
