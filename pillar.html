@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8eaed 100%);
+            margin: 0;
+            padding: 40px;
+            color: #333;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.4em;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.3em;
+            margin-bottom: 60px;
+            color: #5d6d7e;
+            font-weight: 400;
+        }
+        .pillars {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        .pillar {
+            flex: 1;
+            margin: 0 20px;
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .pillar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            z-index: 1;
+        }
+        .pillar:hover {
+            transform: translateY(-10px);
+        }
+        .pillar.analysis {
+            background: linear-gradient(180deg, rgba(52, 152, 219, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+        .pillar.analysis::before {
+            background-color: #3498db;
+        }
+        .pillar.causality {
+            background: linear-gradient(180deg, rgba(231, 76, 60, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+        .pillar.causality::before {
+            background-color: #e74c3c;
+        }
+        .pillar.evaluation {
+            background: linear-gradient(180deg, rgba(46, 204, 113, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+        .pillar.evaluation::before {
+            background-color: #2ecc71;
+        }
+        .number {
+            font-size: 1.8em;
+            font-weight: 700;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .pillar.analysis .number {
+            background-color: #3498db;
+        }
+        .pillar.causality .number {
+            background-color: #e74c3c;
+        }
+        .pillar.evaluation .number {
+            background-color: #2ecc71;
+        }
+        .pillar-title {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .pillar.analysis .pillar-title {
+            color: #3498db;
+        }
+        .pillar.causality .pillar-title {
+            color: #e74c3c;
+        }
+        .pillar.evaluation .pillar-title {
+            color: #2ecc71;
+        }
+        .pillar-subtitle {
+            font-size: 1.2em;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        .pillar-description {
+            font-size: 1.1em;
+            line-height: 1.5;
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Research Framework</h1>
+        <div class="subtitle">A Comprehensive Approach to Event Sequence Analysis</div>
+        
+        <div class="pillars">
+            <div class="pillar analysis">
+                <div class="number">1</div>
+                <div class="pillar-title">Analysis</div>
+                <div class="pillar-subtitle">The "What" and "How"</div>
+                <div class="pillar-description">
+                    Discovering patterns and developing analytical methods
+                </div>
+            </div>
+            
+            <div class="pillar causality">
+                <div class="number">2</div>
+                <div class="pillar-title">Causality</div>
+                <div class="pillar-subtitle">The "Why"</div>
+                <div class="pillar-description">
+                    Understanding relationships beyond correlations
+                </div>
+            </div>
+            
+            <div class="pillar evaluation">
+                <div class="number">3</div>
+                <div class="pillar-title">Evaluation</div>
+                <div class="pillar-subtitle">The "So What" and "Is It Right?"</div>
+                <div class="pillar-description">
+                    Ensuring insights lead to effective decisions
+                </div>
+            </div>
+        </div>
+        
+        <!-- <div class="footer">
+            Kazi Tasnim Zinat | Human-Data Interaction Group | University of Maryland
+        </div> -->
+    </div>
+</body>
+</html>
